@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      nav{
+        background-color: brown;
+        margin: auto;
+        border-radius: 4px;
+        overflow: auto;
+     
+      }
+      ul{
+        /* display: inline; */
+        overflow: auto;
+        margin: 10px auto;
+      }
+     .list{
+        list-style: none;
+        float:left;
+         margin: 2px 9px;
+         color: beige;
+         cursor: pointer;
+         
+      }
+      input{
+        float: right;
+        margin: 1px 4px;
+      }
+      #navbar .list:hover{
+        color: #dcecb6;
+        background-color: rgb(198, 98, 98);
+      }
+      .list:visited{
+       
+      }
+      .list:active{
+           color: aqua;
+      }
+      #image{
+        border:2px solid;
+        border-radius:59px;
+        margin-left:41%;
+        width: 223px;
+        margin-top: 40px;
+      }
+      #text{
+        text-align: center;
+        color: brown;
+      }
+      .images{
+         margin: auto;
+         border: 2px solid rebeccapurple;
+      }
+      footer{
+        background-color:brown ;
+       
+      }
+      #footerpara{
+     display: inline;
+    
+      }
+      #link{
+        color:beige ;
+      }
+      #button{
+      background-color: rgb(177, 107, 107);
+      }
+      .footer{
+        color:beige ;
+        padding: 12px;
+        margin: 12px;
+      }
+      .footer:hover{
+        background-color:  rgb(198, 98, 98);
+      }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav id="navbar">
+            <ul>
+                <!-- <li class="list"> <a href="google.com">Home</a> </li> -->
+                 <li class="list">Home</li>
+                <li class="list">Blog</li>
+                <li class="list">Contact</li>
+                <li class="list">About</li>
+                <div>  <input type="text"></div>
+            </ul>
+          
+        </nav>
+    </header>
+     <div id="images">
+        <img id="image" src="https://image.shutterstock.com/image-photo/ancient-temple-ruins-gadi-sagar-260nw-786126286.jpg" alt="new image">
+        <h3 id="text">CSS Display property</h3>
+     </div>
+    <footer><p class="footer" id="footerpara">Styling links and Button</p>
+          <a class="footer" id="link" href="https://www.google.com/">Google</a>
+          <button class="footer" id="button">Button</button>
+    </footer>
+</body>
+</html>

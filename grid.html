@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+       display: grid;
+       /* grid-template-columns: 100px 300px auto 100px; */
+       /* grid-template-columns: repeat(3,auto); */
+       /* grid-template-rows: repeat(3,auto); */
+       /* for responsive layout */
+       /* width: 100vw; */
+       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+       display:none;
+        }
+        .sec{
+            color: aliceblue;
+            background-color: rebeccapurple;
+            text-align: center;
+            margin: 2px;
+        }
+        /* .sec:first-child{
+            //take space of elements of which they want */
+            /* grid-column-start:2 ;
+            grid-column-end: 4;
+            grid-row-end: 1;
+            grid-row-start: 3; 
+           grid-row: 1 /span 3;
+           grid-column: 1 /span 2;
+        } */
+
+        #contain{
+            display: grid;
+            grid-gap:1rem;
+            grid-template-columns: 300px 300px 100px auto;
+            grid-template-areas: 
+            'header header header header'
+            'aside section section section '
+            'footer footer footer footer';
+        }
+        #header{
+grid-area: header;
+background-color: aqua;
+padding: 1rem;
+border: 2px solid black;
+        }
+        #aside{
+grid-area: aside;
+background-color: aqua;
+padding: 1rem;
+border: 2px solid black;
+        }
+        #section{
+   grid-area: section;
+   background-color: aqua;
+padding: 1rem;
+border: 2px solid black;
+        }
+        #footer{
+            grid-area: footer;
+            background-color: aqua;
+padding: 1rem;
+border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="sec" id="div-1">This is content</div>
+        <div class="sec" id="div-2">This is content</div>
+        <div class="sec" id="div-3">This is content</div>
+        <div class="sec" id="div-4">This is content</div>
+        <div class="sec" >contnnt-1</div>
+        <div class="sec" >contnnt-2</div>
+        <div class="sec" >contnnt-3</div>
+        <div class="sec" >contnnt-4</div>
+    </section>
+
+    <div id="contain">
+        <header class="contain" id="header">
+    about home aboutus home
+        </header>
+ <aside id="aside"> aside Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, esse, et assumenda
+            porro possimus numquam quae quasi sed molestiae pariatur suscipit, Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, aperiam. Quos aut maxime,
+             assumenda aspernatur cumque voluptates quisquam minima porro earum non! Sapiente. aut ipsum!</aside>
+ <div id="section">
+   section Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis praesentium id
+ odit dolor hic nesciunt et quibusdam iure?Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sus
+ cipit hic est quos ratione fugiat ducimus at, nemo laborum porro, nam atque modi? Adipisci odit repellendus illum sunt.
+ </div>
+        
+        <footer id="footer">
+            copywrite issue
+        </footer>
+    </div>
+</body>
+</html>
